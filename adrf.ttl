@@ -1,0 +1,35 @@
+@prefix adrf: <https://coleridgeinitiative.org/owl#> .
+
+@prefix schema: <http://schema.org/>.
+@prefix dbr: <http://dbpedia.org/page/> .
+@prefix dct: <http://purl.org/dc/elements/1.1/#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wn: <http://www.ontologyportal.org/WordNet.owl#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+adrf:ADRF_Ontology rdf:type skos:ConceptScheme;
+  skos:prefLabel "ADRF Ontology"@en;
+  skos:definition "a mid-level OWL ontology spanning domains represented by ADRF use cases"@en.
+
+adrf:Topic a madsrdf:Topic;
+  a madsrdf:Authority;
+  skos:definition "concepts tied to LOC upper ontology http://id.loc.gov/authorities/subjects.html"@en.
+
+
+######################################################################
+## Entity Types
+
+adrf:Dataset a skos:Concept;
+  owl:sameAs schema:Dataset;
+  owl:sameAs dbr:Data_set;
+  madsrdf:hasRelatedAuthority <http://id.loc.gov/authorities/subjects/sh2018002256>;
+  skos:topConceptOf adrf:ADRF_Ontology;
+  skos:prefLabel "dataset"@en;
+  skos:definition "a collection of tables managed by an agency"@en.
+
+#  skos:broader adrf:Linked_Data.
