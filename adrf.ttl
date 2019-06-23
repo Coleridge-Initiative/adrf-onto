@@ -1,12 +1,15 @@
 @prefix adrf: <https://github.com/DerwenAI/adrf-onto/wiki/Vocabulary#> .
 
+## Referenced Namespaces
+
 @prefix dbr: <http://dbpedia.org/page/> .
 @prefix dct: <http://purl.org/dc/elements/1.1/#> .
-@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/>.
+@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix wn: <http://www.ontologyportal.org/WordNet.owl#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -14,23 +17,25 @@
 
 
 adrf:ADRF_Ontology rdf:type skos:ConceptScheme;
+  skos:definition "A mid-level ontology for linked data within ADRF framework use cases"@en;
   skos:prefLabel "ADRF Ontology"@en;
-  skos:definition "A mid-level ontology for linked data within ADRF framework use cases"@en.
+  .
 
 adrf:Topic a madsrdf:Topic;
-  a madsrdf:Authority;
+  skos:definition "Concepts tied to LOC upper ontology http://id.loc.gov/authorities/subjects.html"@en;
   skos:topConceptOf adrf:ADRF_Ontology;
-  skos:definition "Concepts tied to LOC upper ontology http://id.loc.gov/authorities/subjects.html"@en.
+  a madsrdf:Authority;
+  .
 
-
-## Entity Types
+## Local Entities
 
 adrf:Dataset a skos:Concept;
-  owl:sameAs schema:Dataset;
-  owl:sameAs dbr:Data_set;
-  madsrdf:hasRelatedAuthority <http://id.loc.gov/authorities/subjects/sh2018002256>;
+  skos:definition "A collection of tables and metadata, managed by a responsible party"@en;
   skos:topConceptOf adrf:ADRF_Ontology;
   skos:prefLabel "dataset"@en;
-  skos:definition "A collection of tables and metadata, managed by a responsible party"@en.
+  madsrdf:hasRelatedAuthority <http://id.loc.gov/authorities/subjects/sh2018002256>;
+  owl:sameAs schema:Dataset;
+  owl:sameAs dbr:Data_set;
+  .
 
 #  skos:broader adrf:Linked_Data.
