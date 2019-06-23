@@ -3,11 +3,11 @@
 The focus for this repo is a mid-level ontology specification for
 ADRF, managed in the `adrf.ttl` file.  
 
-Note: that's in [*TTL*](https://www.w3.org/TR/turtle/) format, which
-is pronounced "turtle".
+Note: that's in [*TTL*](https://www.w3.org/TR/turtle/) format
+(pronounced "turtle").
 
 
-## Environment dependencies
+## Dependencies
 
 The following assumes that your Python binary is located at
 `/usr/bin/python3` -- change that as needed.
@@ -54,4 +54,6 @@ For more details about the *inference rules* used, see
 Later, we'll automated these tests.
 
 A more comprehensive online service for validating SKOS files is
-available at [PoolParty](https://qskos.poolparty.biz/login).
+available at [*PoolParty*](https://qskos.poolparty.biz/login).
+
+See the [wiki](/wiki) for this repo for more detailed specifications.
