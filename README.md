@@ -56,4 +56,4 @@ Later, we'll automated these tests.
 A more comprehensive online service for validating SKOS files is
 available at [*PoolParty*](https://qskos.poolparty.biz/login).
 
-See the [wiki](/wiki) for this repo for more detailed specifications.
+See the [wiki](https://github.com/Coleridge-Initiative/adrf-onto/wiki) for this repo for more detailed specifications.
