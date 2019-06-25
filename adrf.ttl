@@ -2,9 +2,10 @@
 
 ## Referenced Namespaces
 
+@prefix dcat:	<http://www.w3.org/ns/dcat#> .
+@prefix dct:	<http://purl.org/dc/elements/1.1/#> .
 @prefix dbo:    <http://dbpedia.org/ontology/> .
 @prefix dbr:	<http://dbpedia.org/resource/> .
-@prefix dct:	<http://purl.org/dc/elements/1.1/#> .
 @prefix foaf:	<http://xmlns.com/foaf/0.1/> .
 @prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
 @prefix owl:	<http://www.w3.org/2002/07/owl#> .
@@ -12,7 +13,7 @@
 @prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema:	<http://schema.org/> .
 @prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
-@prefix void: <http://rdfs.org/ns/void#> .
+@prefix void:	<http://rdfs.org/ns/void#> .
 @prefix wn:	<http://www.ontologyportal.org/WordNet.owl#> .
 @prefix xml:	<http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
