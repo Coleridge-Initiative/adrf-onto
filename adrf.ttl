@@ -1,4 +1,4 @@
-@prefix adrf: <https://github.com/DerwenAI/adrf-onto/wiki/Vocabulary#> .
+@prefix adrf: <https://github.com/Coleridge-Initiative/adrf-onto/wiki/Vocabulary#> .
 
 ## Referenced Namespaces
 
