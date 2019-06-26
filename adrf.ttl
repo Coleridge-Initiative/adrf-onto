@@ -45,7 +45,7 @@
   dct:title "Established Populations for Epidemiologic Studies of the Elderly Project"@en;
   dct:alternative "EPESE"@en;
   dct:description "A project initiated by the intramural Epidemiology, Demography and Biometry Program of the National Institute on Aging"@en;
-  pav:createdOn "1993-02"^^xsd:date;
+  pav:createdOn "1993-02-01"^^xsd:date;
   dct:identifier "8481423"@en;
   foaf:page <https://www.ncbi.nlm.nih.gov/pubmed/8481423>;
   dct:publisher :duke_univ;
