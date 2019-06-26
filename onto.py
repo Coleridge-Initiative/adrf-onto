@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+from rdflib.serializer import Serializer
 import rdflib
 import skosify
 import sys
@@ -21,6 +22,10 @@ if __name__ == "__main__":
     # enumerate the S/V/O relationships within the graph
     for subj, pred, obj in graph:
         print(subj, pred, obj)
+
+    # transform graph into JSON-LD
+    with open("tmp.json", "wb") as f:
+        f.write(graph.serialize(format="json-ld", indent=2))
 
     # convert, extend, and check the SKOS vocabulary used
     config = skosify.config("skosify.cfg")

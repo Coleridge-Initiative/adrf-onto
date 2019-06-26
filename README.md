@@ -34,6 +34,7 @@ sure that the committed file is consistent.
 We use the following packages:
 
   * [*rdflib*](https://rdflib.readthedocs.io/): load and parse the RDF input
+  * [*rdflib-jsonld*](https://github.com/RDFLib/rdflib-jsonld): read/write JSON-LD format
   * [*skosify*](https://skosify.readthedocs.io/): validate our use of SKOS vocabulary
 
 To load, parse, and validate the ontology file:
@@ -44,6 +45,9 @@ To load, parse, and validate the ontology file:
 
 Then review the generated `tmp.ttl` output file to make sure it
 doesn't show any errors.
+
+Also, the `tmp.json` shows that same graph in JSON-LD format (machine
+readable).
 
 For more details about the *inference rules* used, see
 [*SKOS-Inference*](https://github.com/NatLibFi/Skosify/wiki/SKOS-Inference).
