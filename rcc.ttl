@@ -1,0 +1,22 @@
+@base <https://github.com/Coleridge-Initiative/adrf-onto/wiki/Vocabulary> .
+
+@prefix dct:	<http://purl.org/dc/terms/> .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix pav:	<http://purl.org/pav/> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+
+:dataset381
+  rdf:type :Dataset ;
+  dct:title "Established Populations for Epidemiologic Studies of the Elderly Project"@en ;
+  dct:alternative "EPESE"@en ;
+  dct:description "A project initiated by the intramural Epidemiology, Demography and Biometry Program of the National Institute on Aging"@en ;
+  pav:createdOn "1993-02-01"^^xsd:date ;
+  dct:identifier "8481423"@en ;
+  foaf:page <https://www.ncbi.nlm.nih.gov/pubmed/8481423> ;
+  dct:publisher :duke_univ ;
+  pav:curatedBy :cornoni-huntley_j ;
+  .
+
+:Catalog :dataset :dataset381 .

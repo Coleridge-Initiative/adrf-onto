@@ -19,35 +19,29 @@
 @prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
 
 
-:ADRF_Ontology rdf:type skos:ConceptScheme;
-  skos:definition "A mid-level ontology for linked data within the ADRF framework use cases"@en;
-  skos:prefLabel "ADRF Ontology"@en;
+:ADRF_Ontology rdf:type skos:ConceptScheme ;
+  skos:definition "A mid-level ontology for linked data within the ADRF framework use cases"@en ;
+  skos:prefLabel "ADRF Ontology"@en ;
   .
 
-:Topic a madsrdf:Topic;
-  skos:definition "Concepts tied to LOC upper ontology http://id.loc.gov/authorities/subjects.html"@en;
-  skos:topConceptOf :ADRF_Ontology;
-  a madsrdf:Authority;
+:Catalog a dcat:Catalog ;
+  skos:topConceptOf :ADRF_Ontology ;
+  dct:title "ADRF Data Catalog" ;
+  rdfs:label "ADRF Data Catalog" ;
+  foaf:homepage <https://coleridgeinitiative.org/> ;
+  dct:language <http://id.loc.gov/vocabulary/iso639-1/en>  ;
   .
 
-:Dataset a skos:Concept;
-  skos:definition "A collection of tables and metadata, managed by a responsible party"@en;
-  skos:topConceptOf :ADRF_Ontology;
-  skos:prefLabel "dataset"@en;
-  rdf:type dctypes:Dataset;
-  madsrdf:hasRelatedAuthority <http://id.loc.gov/authorities/subjects/sh2018002256>;
-  owl:sameAs dbr:Data_set;
+:Topic a madsrdf:Topic ;
+  skos:definition "Concepts tied to LOC upper ontology http://id.loc.gov/authorities/subjects.html"@en ;
+  skos:topConceptOf :ADRF_Ontology ;
+  a madsrdf:Authority ;
   .
 
-
-:dataset381
-  rdf:type dctypes:Dataset;
-  dct:title "Established Populations for Epidemiologic Studies of the Elderly Project"@en;
-  dct:alternative "EPESE"@en;
-  dct:description "A project initiated by the intramural Epidemiology, Demography and Biometry Program of the National Institute on Aging"@en;
-  pav:createdOn "1993-02-01"^^xsd:date;
-  dct:identifier "8481423"@en;
-  foaf:page <https://www.ncbi.nlm.nih.gov/pubmed/8481423>;
-  dct:publisher :duke_univ;
-  pav:curatedBy :cornoni-huntley_j;
+:Dataset a dcat:Dataset ;
+  skos:definition "A collection of tables and metadata used within the ADRF framework, managed by a responsible party"@en ;
+  skos:topConceptOf :ADRF_Ontology ;
+  skos:prefLabel "dataset"@en ;
+  madsrdf:hasRelatedAuthority <http://id.loc.gov/authorities/subjects/sh2018002256> ;
+  owl:sameAs dbr:Data_set ;
   .
