@@ -2,6 +2,7 @@
 # encoding: utf-8
 
 from rdflib.serializer import Serializer
+import json
 import rdflib
 import skosify
 import sys
@@ -32,8 +33,11 @@ if __name__ == "__main__":
         print(subj, pred, obj)
 
     # transform graph into JSON-LD
+    with open("vocab.json", "r") as f:
+        context = json.load(f)
+
     with open("tmp.json", "wb") as f:
-        f.write(graph.serialize(format="json-ld", indent=2))
+        f.write(graph.serialize(format="json-ld", context=context, indent=2))
 
     # convert, extend, and check the SKOS vocabulary used
     config = skosify.config("skosify.cfg")

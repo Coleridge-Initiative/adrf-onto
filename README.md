@@ -8,6 +8,7 @@ Some files of particular interest:
   * `adrf.ttl` -- a mid-level ontology specification for ADRF
   * `rcc.ttl` -- results from the [Rich Context Competition](https://coleridgeinitiative.org/richcontextcompetition), represented in a graph using the ADRF ontology
   * `onto.py` -- a brief Python script used to load and validate the graph data
+  * `vocab.json` -- a JSON-LD context for [*compaction*](https://www.w3.org/TR/json-ld-api/#compaction) of the output graph files
 
 Note that this data is represented in [*TTL*](https://www.w3.org/TR/turtle/) format
 (pronounced "turtle") for the parts that humans read and write.
