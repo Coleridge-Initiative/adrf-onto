@@ -1,12 +1,12 @@
 # ADRF Ontology
 
 Welcome to `adrf-onto` which is used to construct, validate, and
-leverage the Rich Contexgt knowledge graph within the ADRF framework.
+leverage the [Rich Context knowledge graph](https://coleridgeinitiative.org/richcontext) for the ADRF framework.
 
 Some files of particular interest:
 
   * `adrf.ttl` -- a mid-level ontology specification for ADRF
-  * `rcc.ttl` -- results from the [Rich Context Competition](https://coleridgeinitiative.org/richcontextcompetition), represented in a graph using the ADRF ontology
+  * `rcc.ttl` -- a subgraph of results from the [Rich Context Competition](https://coleridgeinitiative.org/richcontextcompetition), using this vocabulary for ADRF
   * `onto.py` -- a brief Python script used to load and validate the graph data
   * `vocab.json` -- a JSON-LD context for [*compaction*](https://www.w3.org/TR/json-ld-api/#compaction) of the output graph files
 
@@ -49,8 +49,8 @@ To load, parse, and validate the files used to construct the graph:
 Then review the generated `tmp.ttl` output file to make sure it
 doesn't show any errors.
 
-Also, the `tmp.json` shows that same graph in JSON-LD format (machine
-readable).
+The `tmp.json` shows that same graph in JSON-LD format (machine
+readable), which is used as a test case for the [JupyterLab metadata service](https://github.com/jupyterlab/jupyterlab-metadata-service/issues/23#issuecomment-506786436).
 
 For more details about the *inference rules* used, see
 [*SKOS-Inference*](https://github.com/NatLibFi/Skosify/wiki/SKOS-Inference).
