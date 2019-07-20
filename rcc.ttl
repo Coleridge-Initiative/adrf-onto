@@ -1,22 +1,120 @@
 @base <https://github.com/Coleridge-Initiative/adrf-onto/wiki/Vocabulary> .
 
+@prefix cito:	<http://purl.org/spar/cito/> .
 @prefix dct:	<http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf:	<http://xmlns.com/foaf/0.1/> .
 @prefix pav:	<http://purl.org/pav/> .
+@prefix prism:	<http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
 
 
-:dataset381
+:dataset481
   rdf:type :Dataset ;
-  dct:title "Established Populations for Epidemiologic Studies of the Elderly Project"@en ;
-  dct:alternative "EPESE"@en ;
-  dct:description "A project initiated by the intramural Epidemiology, Demography and Biometry Program of the National Institute on Aging"@en ;
-  pav:createdOn "1993-02-01"^^xsd:date ;
-  dct:identifier "8481423"@en ;
-  foaf:page <https://www.ncbi.nlm.nih.gov/pubmed/8481423> ;
-  dct:publisher :duke_univ ;
-  pav:curatedBy :cornoni-huntley_j ;
+  dct:title "National Health and Nutrition Examination Survey"@en ;
+  dct:alternative "NHANES"@en ;
+  dct:description "A program of studies designed to assess the health and nutritional status of adults and children in the United States"@en ;
+  pav:createdOn "2012-02-22"^^xsd:date ;
+  dct:identifier "https://doi.org/10.3886/ICPSR25501.v4"^^xsd:anyURI ;
+  foaf:page "https://www.icpsr.umich.edu/icpsrweb/NACDA/series/39"^^xsd:anyURI ;
+  dct:publisher :national_center_for_health_statistics ;
   .
 
-:Catalog :dataset :dataset381 .
+:dataset_x001
+  rdf:type :Dataset ;
+  dct:title "Continuing Survey of Food Intakes by Individuals"@en ;
+  dct:alternative "CSFII"@en ;
+  dct:description "1-day dietary intakes of men 19 to 50 years of age living in the United States in 1985"@en ;
+  pav:createdOn "2009-01-27"^^xsd:date ;
+  dct:identifier "https://doi.org/10.3886/ICPSR21960.v1"^^xsd:anyURI ;
+  foaf:page "https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/21960/version/1"^^xsd:anyURI ;
+  dct:publisher :usda ;
+  .
+
+
+:publication338
+  rdf:type :ResearchPublication ;
+  dct:title "Trends and correlates in meat consumption patterns in the US adult population"@en ;
+  dct:publisher "Public Health Nutrition"@en ;
+  dct:identifier "https://doi.org/10.1017/S1368980010000224"^^xsd:anyURI ;
+  dct:language "en" ;
+  prism:publicationDate "2010-03-01"^^xsd:date ;
+  dcterms:creator :youfa_wang, :may_a_beydoun, :benjamin_caballero, :tiffany_l_gary, :robert_lawrence ;
+  dct:subject "Meat consumption"@en, "Food intake"@en, "Trend"@en, "Diet"@en, "United States"@en ;
+  cito:citesAsDataSource :dataset481, :dataset_x001 ;
+  .
+
+
+:youfa_wang
+  rdf:type :Researcher ;
+  foaf:name "Youfa Wang"@en ;
+  foaf:page "https://scholar.google.com/citations?user=cHpphu0AAAAJ&hl=en&oi=ao"^^xsd:anyURI ;
+  .
+
+:may_a_beydoun
+  rdf:type :Researcher ;
+  foaf:name "May A Beydoun"@en ;
+  foaf:page "https://www.researchgate.net/profile/May_Beydoun"^^xsd:anyURI ;
+  .
+
+:benjamin_caballero
+  rdf:type :Researcher ;
+  foaf:name "Benjamin Caballero"@en ;
+  foaf:page "https://orcid.org/0000-0003-4311-6321"^^xsd:anyURI ;
+  .
+
+:tiffany_l_gary
+  rdf:type :Researcher ;
+  foaf:name "Tiffany L Gary"@en ;
+  foaf:page "https://orcid.org/0000-0001-9843-1084"^^xsd:anyURI ;
+  .
+
+:robert_lawrence
+  rdf:type :Researcher ;
+  foaf:name "Robert Lawrence"@en ;
+  foaf:page "https://www.scopus.com/authid/detail.uri?authorId=7201490909"^^xsd:anyURI ;
+  .
+
+
+:publication340
+  rdf:type :ResearchPublication ;
+  dct:title "Metabolic syndrome and weight gain in adulthood"@en ;
+  dct:publisher "The Journals of Gerontology: Series A"@en ;
+  dct:identifier "https://doi.org/10.1093/gerona/glp177"^^xsd:anyURI ;
+  dct:language "en" ;
+  prism:publicationDate "2009-11-11"^^xsd:date ;
+  dcterms:creator :dawn_e_alley, :virginia_w_chang ;
+  dct:subject "Metabolic syndrome"@en, "Weight history"@en, "Body mass index"@en, "Lipids"@en ;
+  cito:citesAsDataSource :dataset481 ;
+  .
+
+:dawn_e_alley
+  rdf:type :Researcher ;
+  foaf:name "Dawn E Alley"@en ;
+  foaf:page "https://www.scopus.com/authid/detail.uri?authorId=14041087200"^^xsd:anyURI ;
+  .
+
+:virginia_w_chang
+  rdf:type :Researcher ;
+  foaf:name "Virginia W Chang"@en ;
+  foaf:page "https://www.semanticscholar.org/author/Virginia-W-Chang/40382448"^^xsd:anyURI ;
+  .
+
+
+:national_center_for_health_statistics
+  rdf:type :DatasetProvider ;
+  foaf:name "National Center for Health Statistics"@en ;
+  foaf:page "https://www.cdc.gov/nchs/index.htm"^^xsd:anyURI ;
+  .
+
+:usda
+  rdf:type :DatasetProvider ;
+  foaf:name "USDA"@en ;
+  foaf:page "https://www.usda.gov/"^^xsd:anyURI ;
+  .
+
+
+:Catalog :dataset :dataset481, :dataset_x001 .
+
+:Corpus :publication :publication338, :publication340 .
