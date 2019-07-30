@@ -64,7 +64,7 @@ We're using the following packages:
 
 ## Roadmap
 
-Later, we'll automated these tests.
+Later, we'll automate these tests.
 
 A more comprehensive online service for validating SKOS files is
 available at [*PoolParty*](https://qskos.poolparty.biz/login).
