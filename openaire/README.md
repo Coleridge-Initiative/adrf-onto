@@ -1,1 +1,0 @@
-./openaire.py ../usda/dyads_for_validation.csv > openaire.tsv
