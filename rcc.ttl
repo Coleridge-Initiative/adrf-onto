@@ -2,7 +2,6 @@
 
 @prefix cito:	<http://purl.org/spar/cito/> .
 @prefix dct:	<http://purl.org/dc/terms/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf:	<http://xmlns.com/foaf/0.1/> .
 @prefix pav:	<http://purl.org/pav/> .
 @prefix prism:	<http://prismstandard.org/namespaces/basic/2.0/> .
@@ -40,38 +39,38 @@
   dct:identifier "https://doi.org/10.1017/S1368980010000224"^^xsd:anyURI ;
   dct:language "en" ;
   prism:publicationDate "2010-03-01"^^xsd:date ;
-  dcterms:creator :youfa_wang, :may_a_beydoun, :benjamin_caballero, :tiffany_l_gary, :robert_lawrence ;
+  dct:creator :youfa_wang, :may_a_beydoun, :benjamin_caballero, :tiffany_l_gary, :robert_lawrence ;
   dct:subject "Meat consumption"@en, "Food intake"@en, "Trend"@en, "Diet"@en, "United States"@en ;
   cito:citesAsDataSource :dataset481, :dataset_x001 ;
   .
 
 
 :youfa_wang
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "Youfa Wang"@en ;
   foaf:page "https://scholar.google.com/citations?user=cHpphu0AAAAJ&hl=en&oi=ao"^^xsd:anyURI ;
   .
 
 :may_a_beydoun
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "May A Beydoun"@en ;
   foaf:page "https://www.researchgate.net/profile/May_Beydoun"^^xsd:anyURI ;
   .
 
 :benjamin_caballero
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "Benjamin Caballero"@en ;
   foaf:page "https://orcid.org/0000-0003-4311-6321"^^xsd:anyURI ;
   .
 
 :tiffany_l_gary
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "Tiffany L Gary"@en ;
   foaf:page "https://orcid.org/0000-0001-9843-1084"^^xsd:anyURI ;
   .
 
 :robert_lawrence
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "Robert Lawrence"@en ;
   foaf:page "https://www.scopus.com/authid/detail.uri?authorId=7201490909"^^xsd:anyURI ;
   .
@@ -84,32 +83,32 @@
   dct:identifier "https://doi.org/10.1093/gerona/glp177"^^xsd:anyURI ;
   dct:language "en" ;
   prism:publicationDate "2009-11-11"^^xsd:date ;
-  dcterms:creator :dawn_e_alley, :virginia_w_chang ;
+  dct:creator :dawn_e_alley, :virginia_w_chang ;
   dct:subject "Metabolic syndrome"@en, "Weight history"@en, "Body mass index"@en, "Lipids"@en ;
   cito:citesAsDataSource :dataset481 ;
   .
 
 :dawn_e_alley
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "Dawn E Alley"@en ;
   foaf:page "https://www.scopus.com/authid/detail.uri?authorId=14041087200"^^xsd:anyURI ;
   .
 
 :virginia_w_chang
-  rdf:type :Researcher ;
+  rdf:type :Author ;
   foaf:name "Virginia W Chang"@en ;
   foaf:page "https://www.semanticscholar.org/author/Virginia-W-Chang/40382448"^^xsd:anyURI ;
   .
 
 
 :national_center_for_health_statistics
-  rdf:type :DatasetProvider ;
+  rdf:type :Provider ;
   foaf:name "National Center for Health Statistics"@en ;
   foaf:page "https://www.cdc.gov/nchs/index.htm"^^xsd:anyURI ;
   .
 
 :usda
-  rdf:type :DatasetProvider ;
+  rdf:type :Provider ;
   foaf:name "USDA"@en ;
   foaf:page "https://www.usda.gov/"^^xsd:anyURI ;
   .

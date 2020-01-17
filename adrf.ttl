@@ -5,7 +5,6 @@
 @prefix dbr:	<http://dbpedia.org/resource/> .
 @prefix dcat:	<http://www.w3.org/ns/dcat#> .
 @prefix dct:	<http://purl.org/dc/terms/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dctypes: <http://purl.org/dc/dcmitype/> .
 @prefix fabio:	<http://purl.org/spar/fabio/> .
 @prefix foaf:	<http://xmlns.com/foaf/0.1/> .
@@ -15,7 +14,6 @@
 @prefix prism:	<http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema:	<http://schema.org/> .
 @prefix skos:	<http://www.w3.org/2004/02/skos/core#> .
 @prefix void:	<http://rdfs.org/ns/void#> .
 @prefix wn:	<http://www.ontologyportal.org/WordNet.owl#> .
@@ -50,7 +48,7 @@
   owl:sameAs dbr:Data_set ;
   .
 
-:Researcher a foaf:Person ;
+:Author a foaf:Person ;
   skos:definition "An author of a research publication that uses datasets for research"@en ;
   skos:topConceptOf :ADRF_Ontology ;
   skos:prefLabel "author"@en ;
@@ -66,7 +64,7 @@
   owl:sameAs dbr:Publication ;
   .
 
-:DatasetProvider a foaf:Organization ;
+:Provider a foaf:Organization ;
   skos:definition "An organizaiton that publishes and curates research datasets"@en ;
   skos:topConceptOf :ADRF_Ontology ;
   skos:prefLabel "dataset provider"@en ;
